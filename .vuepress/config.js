@@ -5,7 +5,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       '/',
-      ['/docs/js/canvas/', 'Canvas'],
+      ['/src/js/canvas/', 'Canvas'],
     ],
     nav: [
       { text: 'Home', link: '/' },

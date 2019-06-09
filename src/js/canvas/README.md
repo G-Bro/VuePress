@@ -77,7 +77,7 @@ It's good. Don't listen to Dan Evans. SVGs suck
 
 Create a **canvas** element and initialise the **context**
 
-<<< @/docs/js/canvas/snippets/basics/createCanvas.js
+<<< @/src/js/canvas/snippets/basics/createCanvas.js
 
 Set the canvas height and width.
 
@@ -85,15 +85,15 @@ Set the canvas height and width.
 Note that changing the height or width of a canvas will wipe the canvas of any content
 :::
 
-<<< @/docs/js/canvas/snippets/basics/setHeightAndWidth.js
+<<< @/src/js/canvas/snippets/basics/setHeightAndWidth.js
 
 Append the canvas to the document body so that we can see it
 
-<<< @/docs/js/canvas/snippets/basics/appendToDocument.js
+<<< @/src/js/canvas/snippets/basics/appendToDocument.js
 
 The canvas **context** is essentially the API for manipulating the content of the canvas. Here we will draw a rect (a quadrilateral) on the canvas using the **fillRect** method
 
-<<< @/docs/js/canvas/snippets/basics/drawRect.js
+<<< @/src/js/canvas/snippets/basics/drawRect.js
 
 You should now have something that looks like this
 
@@ -103,15 +103,15 @@ You should now have something that looks like this
 
 Let's clear the canvas
 
-<<< @/docs/js/canvas/snippets/styles/wipeCanvas.js
+<<< @/src/js/canvas/snippets/styles/wipeCanvas.js
 
 We can change the colour of the square we draw with **fillStyle**
 
-<<< @/docs/js/canvas/snippets/styles/fillStyle.js
+<<< @/src/js/canvas/snippets/styles/fillStyle.js
 
 We can draw another square with a different colour
 
-<<< @/docs/js/canvas/snippets/styles/secondBlock.js
+<<< @/src/js/canvas/snippets/styles/secondBlock.js
 
 <canvas id="multi_square_example"></canvas>
 
@@ -119,7 +119,7 @@ We can draw another square with a different colour
 
 And we can mix layers using **globalCompositeOperation**
 
-<<< @/docs/js/canvas/snippets/composites/multiply.js
+<<< @/src/js/canvas/snippets/composites/multiply.js
 
 Where the 2 squares overlap they are multiplied together
 Read more about [CanvasRenderingContext2D.globalCompositeOperation](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)
