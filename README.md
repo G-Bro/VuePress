@@ -4,4 +4,6 @@
   sidebar: true
 ---
 
-# Hello VuePress
+# Demo VuePress docs
+
+With some blogs and whatnot
