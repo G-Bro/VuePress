@@ -9,8 +9,10 @@ module.exports = {
     ],
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Canvas', link: '/docs/js/canvas/' },
+      { text: 'Canvas', link: '/src/js/canvas/' },
       { text: 'Teemill', link: 'https://teemill.com' },
     ]
-  }
+  },
+  base: '/VuePress/',
+  dest: './docs'
 }
