@@ -12,32 +12,20 @@ Start a container
 
 #### options
 
-| param         | result                                              | example                                |
-| ------------- | --------------------------------------------------- | -------------------------------------- |
-| -d            | run the container in detached mode                  | `docker run -d nginx`                  |
-| --name {name} | run the container with a specified name             | `docker run --name mycontainer nginx`  |
-| -i            | enable command line input to the attached container | `docker run -i nginx`                  |
-| -t            | enable full terminal control of the container       | `docker run -it nginx`                 |
-| -p            | map a port on the host to a port on the container   | `docker run -p 80:5000 nginx`          |
-| -v            | map the storage volume to an external directory     | `docker run -v /path/to/storage nginx` |
+| param  | result                                              | example                                |
+| ------ | --------------------------------------------------- | -------------------------------------- |
+| -d     | run the container in detached mode                  | `docker run -d nginx`                  |
+| --name | assign a specified name to the container            | `docker run --name mycontainer nginx`  |
+| -i     | enable command line input to the attached container | `docker run -i nginx`                  |
+| -t     | enable full terminal control of the container       | `docker run -it nginx`                 |
+| -p     | map a port on the host to a port on the container   | `docker run -p 80:5000 nginx`          |
+| -v     | map the storage volume to an external directory     | `docker run -v /path/to/storage nginx` |
 
-### Tags
+#### Tags
 
 You can add a tag to the image name to specify a version
 
 `docker run redis:4.0`
-
-## ps
-
-List all running containers
-
-`docker ps`
-
-#### options
-
-| param | result                                   | example        |
-| ----- | ---------------------------------------- | -------------- |
-| -a    | show both running and stopped containers | `docker ps -a` |
 
 ## stop
 
@@ -55,6 +43,24 @@ Stop and remove a container
 
 You can find the name of a container via [ps](#ps) and confirm it has stopped via [ps -a](#ps)
 
+## pull
+
+Download an image. Note that [run](#run) will automatically download an image before running it. Pull simply downloads the image without starting a container.
+
+`docker pull nginx`
+
+## ps
+
+List all running containers
+
+`docker ps`
+
+#### options
+
+| param | result                                   | example        |
+| ----- | ---------------------------------------- | -------------- |
+| -a    | show both running and stopped containers | `docker ps -a` |
+
 ## images
 
 List downloaded images
@@ -63,17 +69,11 @@ List downloaded images
 
 ## rmi
 
-Remove an image. Note that all containers must be deleted via [rm](#rm) first
+Remove an image. Note that all containers made from this image must be deleted via [rm](#rm) first
 
 `docker rmi nginx`
 
 You can find the name of an image via [images](#images)
-
-## pull
-
-Download an image. Note that [run](#run) will automatically download an image before running it. Pull simply downloads the image without starting a container.
-
-`docker pull nginx`
 
 ## exec
 
