@@ -5,19 +5,20 @@ module.exports = {
   themeConfig: {
     sidebar: [
       '/',
-      ['/src/js/canvas/', 'Canvas'],
       {
         title: 'Docker',
         path: '/src/docker',
         children: [
           ['/src/docker/commands/', 'Commands'],
+          ['/src/docker/orchestration/', 'Orchestration'],
         ],
       },
+      ['/src/js/canvas/', 'Canvas'],
     ],
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Canvas', link: '/src/js/canvas/' },
       { text: 'Docker', link: '/src/docker/' },
+      { text: 'Canvas', link: '/src/js/canvas/' },
       { text: 'Teemill', link: 'https://teemill.com' },
     ]
   },

@@ -4,6 +4,8 @@
   sidebar: true
 ---
 
-# Demo VuePress docs
+# GBro's VuePress page
 
-With some blogs and whatnot
+This is a VuePress based site that is half blog, half documentation. I use it to record the vast wealth of knowledge in my big brain.
+
+You're welcome world.

@@ -2,4 +2,4 @@
 
 ## [Commands](/src/docker/commands)
 
-Learn about the core docker commands for creating and managing containers
+Reference for the core docker commands required for creating and managing containers

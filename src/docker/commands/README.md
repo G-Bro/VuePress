@@ -10,6 +10,8 @@ Start a container
 
 `docker run nginx`
 
+git rebase develop
+
 #### options
 
 | param  | result                                              | example                                |
